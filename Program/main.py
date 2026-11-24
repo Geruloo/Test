@@ -1,7 +1,9 @@
+import math
 def is_prime(n):
     if n==1 or 0:
         return False
-    for i in range(2, n):
+    m=round(math.sqrt(n))
+    for i in range(2, m+1):
         if n % i == 0:
             return False
     return True
